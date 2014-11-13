@@ -1,0 +1,101 @@
+html,body{
+    height: 100%;
+    font-family: ‘Sacramento’, cursive;
+    background-color: #f0ffff;
+    margin: 0px;
+}
+
+
+header{
+    font-size: 200%;
+    position: fixed !important;  
+    position: absolute;  
+    top: 0;  
+    left: 0;  
+    width: 100%;  
+    color: #fff;
+    background-color: #000;
+    opacity: 0.8;
+}
+
+header li{
+    color: white;
+    list-style:none;
+    text-decoration:none;
+    float: left;
+    width: 5em;
+}
+
+
+section{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    text-align: center;
+    display: table;
+}
+section#top{
+    font-size: 500%;
+    color: white;
+    vertical-align: center;
+    background-image: url(background.jpg);
+    background-size:100% auto;
+    text-shadow: 3px 3px rgba(0,0,0,0.4);
+}
+
+section#top li{
+    font-size: 50%;
+    color: white;
+    list-style:none;
+    text-decoration:none;
+}
+
+a{
+    text-decoration: none;
+}
+
+section#profile{
+
+    background-size:100% auto;
+}
+
+* html section {  
+    position: relative; 
+}  
+*+html section {  
+    position: relative; 
+}
+
+
+div.vertical_middle {  
+    display: table-cell;    
+    vertical-align: middle;
+
+}
+
+* html div.vertical_middle {  
+    position: absolute;
+    top: 50%;
+}  
+*+html div.vertical_middle {  
+    position: absolute;
+    top: 50%;
+}  
+
+div.vertical_middle video {  
+    margin: 0;  
+}  
+* html div.vertical_middle video {  
+    position: relative;
+    top: -50%;         
+}  
+*+html div.vertical_middle video {  
+    position: relative;
+    top: -50%;         
+}
+
+video{
+    width: 80%;
+    box-shadow: 10px 10px 30px 10px rgba(0,0,0,0.4);
+}

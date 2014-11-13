@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="main.css" media="all">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+      $('a[href^=#]').click(function(){
+      var speed = 500;
+      var href= $(this).attr("href");
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      var position = target.offset().top;
+      $("html, body").animate({scrollTop:position}, speed, "swing");
+      return false;
+      });
+      });
+    </script>
+    <title>test</title>
+  </head>
+  <body>
+    <header>
+
+      <div class="navigator">
+	<ul>
+	  <a href="#top"><li>Top</li></a>
+	  <a href="#profile"><li>Profile</li></a>
+	  <a href="#endroll"><li>Endroll</li></a>
+	</ul>
+      </div>
+
+
+    </header>
+    <section id="top">
+      <div class="vertical_middle"> 
+	Yusuke & Yuria<br/>
+	Wedding MOVIE<br/>
+    </section>
+
+    <section id="profile">
+      <div class="vertical_middle"> 
+	<video src="http://www.rikote.net/matsui/Profile.mp4" controls></video>
+      </div>
+    </section>
+
+    <section id="endroll">
+      <div class="vertical_middle">
+	<video src="http://www.rikote.net/matsui/Endroll.mp4" controls></video>
+      </div>
+    </section>
+
+  </body>
+</html>
